@@ -3,9 +3,12 @@
 <head>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
-<link href=style3.css rel=stylesheet>
+<link href="ticker-style.css" rel="stylesheet" type="text/css"/>
+<script src="jquery.ticker.js" type="text/javascript"></script>
+<link href="style3.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-  <title>Espresso</title>
+
+<title>Espresso</title>
 </head>
 <body>
 <div id="box"></div>
@@ -15,7 +18,7 @@
   </li>
 </br>
   <li>
-<strong>Meanings:</strong>
+<strong>Meaning:</strong>
 The first meaning is related to the idea of "expressing" or squeezing the flavour from the coffee using the pressure of the steam.
 </br>
 The second meaning is to do with speed, as in a train.
@@ -35,5 +38,20 @@ Typically each barista and coffee shop have their own particular styles, coffee 
 A distinctive feature of espresso, as opposed to brewed coffee, is espresso's association with cafés, due both to the specialized equipment and skill required, thus making the enjoyment of espresso a social experience.
   </li>
 </ul>
+
+<ul id="js-news" class="js-hidden">
+    <li class="news-item"><a href="#">This is the 1st latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 2nd latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 3rd latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 4th latest news item.</a></li>
+</ul>
+
+<script type="text/javascript">
+    $(function () {
+        $('#js-news').ticker();
+    });
+
+</script>
+
 </body>
 </html>

@@ -1,60 +1,56 @@
-body{
-  padding: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background-color: #f9f9f9 !important;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f9f9f9 !important;
 }
-.coffee_images{
-  height: 60%;
-  width: 60%;
-  margin-left: 50px;
+
+.coffee_images {
+    height: 60%;
+    width: 60%;
+    margin-left: 50px;
 }
 
 .row {
-  margin-top: 40px;
-  margin-bottom:30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .col {
-  padding: 20px;
-  margin-bottom:40px;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .img_container {
-padding: 20px;
-background-color: #fff;
-border: 1px solid #ddd;
-width: 100%;
-height: 100%;
-border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
 }
 
 .hideDisplay {
-position: relative;
-z-index: 20;
-color: #000;
-text-decoration: none;
+    position: initial;
+    z-index: 20;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .hideDisplay:hover {
-z-index: 30;
- }
+    z-index: 30;
+}
 
- .hideDisplay span.showDisplayOnHover{
- display: none;
- }
+.img_container span.showDisplayOnHover {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+}
 
- .hideDisplay:hover span.showDisplayOnHover{
- display: block;
- position: absolute;
- font-size: 18px;
- line-height: 25 px;
- top 5px;
- left: 20px;
- width: auto;
- padding: 10px;
- border: 1px solid #666666;
- background-color: #c0cedd;
- color: #000000;
- text-align: left;
- }
+.img_container:hover span.showDisplayOnHover {
+    display: block;
+    width: 100%;
+}
