@@ -1,10 +1,20 @@
 var text = "";
 var count= 0;
 var maxspeed= 200;
+var move = "";
+var tagId ="";
+
 $(document).ready(function(){
 
 	function typeit(punch){
-	text = punch;
+		var lala = $(punch);
+		if (lala[0]){
+			move = lala.html();
+			tagId = lala;
+			lala.html("");
+		}
+
+	text = move;
 	type();
 	}
 
@@ -15,10 +25,18 @@ $(document).ready(function(){
 	function type(){
 	var random = Math.floor(Math.random() * maxspeed);
 	setTimeout(type, random);
-	$('#box').append(character(count, count+1, text));
+	$('#box1').append(character(count, count+1, text));
 	count++;
 }
 
-typeit("Coffee is awesome!");
+typeit('#box1');
 
 });
+
+//
+ var coffeeData = new Array();
+$("coffeeD").each(function(){
+var coffeeD = $(this).text();
+coffeeData.push(coffeeD);
+});
+//
